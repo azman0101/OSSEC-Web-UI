@@ -123,11 +123,6 @@ function os_getanyalerts($ossec_handle, $init_time, $final_time, $max_count = 30
         /* Reading all the entries */
         while(1)
         {
-            /* Dont get more than max count alerts per page */
-            if($alert_list->size( ) > $max_count)
-            {
-            	break;
-	    }
             
             $alert = __os_parsealert($fp, $curr_time, $init_time, 
                                      $final_time, $min_level,
@@ -137,7 +132,9 @@ function os_getanyalerts($ossec_handle, $init_time, $final_time, $max_count = 30
                                      $srcip_pattern, $user_pattern,
                                      $log_pattern, $log_regex,
                                      $rc_code_hash);
-            if($alert == NULL)
+            
+            /* Dont get more than max count alerts per page of enf of alerts*/
+	    if($alert == NULL || $alert_list->size( ) > $max_count)
             {
                 break;
             }
