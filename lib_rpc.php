@@ -1,8 +1,8 @@
 <?php
 
-/* @(#) $Id: lib_rpc.php,v 1.17 2008/03/03 19:37:25 dcid Exp $ */
+/* @(#) $Id: lib_rpc.php,v 1.17 2011/06/02 10:30:43 $ */
 
-/* Copyright (C) 2006-2008 Julien BOULANGER <azman0101@hotmail.com>
+/* Copyright (C) 2011 Julien BOULANGER <azman0101@hotmail.com>
  * All rights reserved.
  *
  * This program is a free software; you can redistribute it
@@ -15,7 +15,7 @@
  * This file contains functions dealing with the retrieval of alert-related
  * information from an OSSEC installation.
  * 
- * @copyright Copyright (c) 2006-2008, Julien BOULANGER, All rights reserved.
+ * @copyright Copyright (c) 2011, Julien BOULANGER, All rights reserved.
  * @package ossec_rpc
  * @author Julien BOULANGER <azman0101@hotmail.com> 
  * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU Public License
@@ -24,8 +24,6 @@
 
 require_once 'lib/Ossec/Alert.php';
 require_once 'lib/Ossec/AlertList.php';
-
-
 
 /**
  * Fetch an array of alert data, possibly constrained by time and
