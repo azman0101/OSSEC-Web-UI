@@ -3,6 +3,14 @@ Copyright (c) 2006-2008 Daniel B. Cid <dcid@ossec.net>
 
 Modified by Julien BOULANGER for add JSON-RPC support v0.1
 
+- Utilisation de Services_JSON pear (http://pear.php.net/pepr/pepr-proposal-show.php?id=198)
+
+
+
+
+
+
+
 1- How to install.
 
 1.0 - Prerequisites
